@@ -19,3 +19,7 @@ Route::get('/', function () {
 Route::get('/meuPrimeiroCaminho', function () {
     return view('caminho');
 });
+
+Route::get('/resultado/{numero}/{numero2?}', function($numero, $numero2 = null){
+    return view('numero')->with('numero', $numero)->with('numero2', $numero2);
+});

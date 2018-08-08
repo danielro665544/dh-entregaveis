@@ -1,7 +1,11 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Daniel
- * Date: 07/08/2018
- * Time: 23:14
- */
+@if(isset($numero2))
+    {{$numero * $numero2}}
+
+@elseif($numero % 2 >0)
+    O numero é impar
+@else
+    O numero é par
+@endif
+
+
+
