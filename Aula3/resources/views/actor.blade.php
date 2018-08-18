@@ -1,7 +1,7 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Daniel
- * Date: 08/08/2018
- * Time: 02:39
- */
+@foreach($Actor as $ac)
+
+    <br>Id: {{$ac->id}}
+    <br>Nome Completo: {{$ac->first_name}}  {{$ac->last_name}}
+    <br>Rating: {{$ac->rating}}
+    <br>Filme Favorito: {{$ac->title}}
+    @endforeach

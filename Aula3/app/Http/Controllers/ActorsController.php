@@ -31,7 +31,7 @@ class ActorsController extends Controller
     public function buscar(Request $request)
     {
         $actors = Actor::where('first_name', 'LIKE', "%". $request->parte. "%")->get();
-       return view('actors')->with('Actors', $actors);
+        return view('actors')->with('Actors', $actors);
 
     }
 
